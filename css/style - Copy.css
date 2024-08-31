@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap') 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    /*makes the body 1 screen size tall*/
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+}
+
+
+.bg {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: -9px;
+    right: 8px;
+}
+
+.bg img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.empty { background: transparent;}
+
+.main { background: transparent; }
+
+nav {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+nav div:nth-child(1) {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav div:nth-child(1) ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+nav div:nth-child(2) span:nth-child(2) {
+    display: flex;
+    background: rgba(255, 255, 255, 0.13);
+    padding: .5rem 1rem;
+    border: 1px solid #fff;
+}
+
+.hero h1 {
+    max-width: 650px;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 150px;
+}
+
+.hero span{
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding: .8rem 1rem;
+    max-width: 150px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1b1a1a;
+}
+
+.processes, .offerings {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+.processes-bg {
+    background: rgb(255, 255, 255);
+}
+
+.processes .title-rotate{
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    transform: translateX(330px) translatey(45px) rotate(270deg);
+}
+
+.process {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 3rem;
+    background: rgb(255, 255, 255);
+    margin-top: 3rem;
+}
+
+.process > div {
+    line-height: 1.5rem;
+    color: #1b1a1a;
+}
+
+.process > div p {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+.process img {
+    width: 3rem;
+}
+
+.process img.strategy {
+    width: 5rem;
+}
+
+.offering {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 3rem;
+    color: #1b1a1a;
+}
+
+.offerings-bg {
+    background: rgb(209, 207, 207);
+}
+
+.offering h3{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+
+

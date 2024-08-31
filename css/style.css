@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap') * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    /*makes the body 1 screen size tall*/
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+    background: #f5f2f2;
+}
+
+
+.bg {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: -9px;
+    right: 8px;
+}
+
+.bg img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.empty {
+    background: transparent;
+}
+
+.main {
+    background: transparent;
+}
+
+nav {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+nav div:nth-child(1) {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav div:nth-child(1) ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+nav div:nth-child(2) span:nth-child(2) {
+    display: flex;
+    background: rgba(255, 255, 255, 0.13);
+    padding: .5rem 1rem;
+    border: 1px solid #fff;
+}
+
+.hero h1 {
+    max-width: 650px;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 150px;
+}
+
+.hero span {
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding: .8rem 1rem;
+    max-width: 150px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1b1a1a;
+}
+
+.processes,
+.offerings {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+.processes-bg {
+    background: rgb(255, 255, 255);
+}
+
+.processes .title-rotate {
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    transform: translateX(330px) translatey(45px) rotate(270deg);
+}
+
+.process {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 5rem;
+    background: rgb(255, 255, 255);
+    margin-top: 3rem;
+}
+
+.process>div {
+    line-height: 1.5rem;
+    color: #1b1a1a;
+}
+
+.process>div p {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+.process img {
+    width: 3rem;
+}
+
+.process img.strategy {
+    width: 5rem;
+}
+
+.offering {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 5rem;
+    padding: 5rem;
+    color: #1b1a1a;
+    background: rgb(209, 207, 207);
+}
+
+
+.offering h3 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.offering div p {
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.offering div ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 60px;
+}
+
+.offering div ul li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(0deg 3.34% 32.76% / 15%);
+    font-weight: 700;
+}
+
+.offering div ul li i {
+    background-color: rgba(128, 126, 126, 0.199);
+    padding: 10px;
+    border-radius: 25%;
+    margin-right: 20px;
+}
+
+.configurable {
+    background: rgb(255, 255, 255);
+    color: #1b1a1a;
+    margin-top: -45px;
+}
+
+.configurable div h1 {
+    max-width: 700px;
+    padding: 5rem;
+    font-size: 4em;
+    margin-bottom: -25px;
+}
+
+.configurables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 0 5rem 5rem 5rem;
+    /* margin-top: 3rem;*/
+}
+
+.configurables p {
+    line-height: 2rem;
+
+}
+
+.stats .coloured-bg {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    right: 8px;
+    margin-top: -22px;
+}
+
+.stats .coloured-bg img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.stats-details {
+    position: relative;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 0 10rem 0 10rem;
+}
+
+.stats-details p {
+    font-size: 6rem;
+    margin-bottom: -10px;
+}
+
+.stats-details span {
+    display: flex;
+    max-width: 250px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.deal-making-row {
+    margin-top: 139px;
+    right: 0;
+    position: absolute;
+    padding-left: 160px;
+}
+
+.features {
+    background: #1b1a1a;
+    color: #fff;
+    position: relative;
+    right: 8px;
+}
+
+.features ul.feature-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    gap: 0;
+}
+
+.features img {
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.features ul.feature-list li {
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: none;
+    font-weight: 700;
+    color: #ffffff34;
+}
+
+.features ul.feature-list li.active {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.features ul.feature-list li.active span {
+    width: 200px;
+    border-top: 1px solid #fff;
+
+}
+
+.structure {
+    height: 700px;
+    background: #1b1a1a;
+    right: 8px;
+    position: relative;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.structure .stats-details {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 0 5rem 5rem 5rem;
+    background: #fff;
+    color: #1b1a1a;
+}
+
+.structure .stats-details span {
+    max-width: 1000px;
+    line-height: 2rem;
+    margin-bottom: -40px;
+}
+
+.structure .stats-details p {
+    max-width: 700px;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.structure form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 300px;
+}
+
+.structure form input {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+.structure form input[type="button"] {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.structure form input[type="text"]::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.structure form input[type="text"]:focus {
+    background-color: #484949;
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.footer.offering div ul {
+margin-top: 0;
+}
+
+.footer h1 {
+    margin-top: 0;
+}
+
+.footer-bottom{
+    color: #1b1a1a;
+    padding: 3rem 8rem 3rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .footer-link, .social{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
